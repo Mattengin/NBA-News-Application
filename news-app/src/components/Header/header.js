@@ -1,13 +1,15 @@
 import React from 'react';
 import style from './header.css'
 import { Link } from 'react-router-dom'
-// import SideNav from './SideNav/sideNav'
+import SideNav from './SideNav/sideNav'
 const Header = (props) => {
 
     const navBar = () =>{
         return(
             <div className={style.navBar}>
-                <i className="fas fa-bars"></i>
+                <i className="fas fa-bars"
+                onClick={props.onOpenNav}
+                ></i>
             </div>
         )
 
@@ -23,7 +25,7 @@ const Header = (props) => {
 
     return(
         <header className={style.header}>
-        {/* <SideNav {...props}/> */}
+        <SideNav {...props}/>
            <div className={style.subHeader}>
            { navBar() }
                 { logo() }

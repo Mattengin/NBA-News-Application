@@ -1,0 +1,17 @@
+.items{
+    font-weight: 300;
+    font-size:12;
+    color:#bababa;
+    padding: 10px;
+    border-top: 1px solid #404040;
+}
+
+.items a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.items i {
+    color:white;
+    margin-right: 10px;
+}
